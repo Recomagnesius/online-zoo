@@ -173,7 +173,12 @@ a:hover {
 
 main {
   margin: 0px;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
+  height: 1830px;
+}
+
+main .container {
+  position: relative;
   height: 1830px;
 }
 
@@ -213,6 +218,7 @@ main {
 }
 
 .slider {
+  z-index: 2;
   margin: 0px auto;
   max-width: 1330px;
   display: -webkit-box;
@@ -224,6 +230,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .slider-images__content {
@@ -236,6 +243,10 @@ main {
           justify-content: space-between;
 }
 
+.slider-images__content + .slider-images__content {
+  margin-top: 20px;
+}
+
 .slider__btn {
   background-color: #f9804b;
   background-image: url("../../assets/icons/arrow.svg");
@@ -246,12 +257,16 @@ main {
   border-radius: 50%;
   border: none;
   outline: none;
+  position: absolute;
+  left: -80px;
 }
 
 .slider-images + .slider__btn {
   background-image: url("../../assets/icons/arrow.svg");
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  position: absolute;
+  left: 1180px;
 }
 
 .slider-img-wrapper + .slider-img-wrapper {
@@ -312,6 +327,32 @@ main {
   text-align: center;
   text-transform: uppercase;
   margin: 0px auto;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  line-height: 320%;
+}
+
+.flowers {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.grass {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.flower {
+  z-index: 1;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
 
 .feed {
@@ -319,12 +360,17 @@ main {
   opacity: 0.9;
 }
 
+.feed {
+  padding: 70px 0px 0px 0px;
+  max-height: 1000px;
+}
+
 .window {
   background: rgba(253, 253, 255, 0.52);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   border-radius: 20px;
-  padding: 0px 100px;
+  padding: 20px 100px 0px 100px;
 }
 
 .window p,
@@ -340,6 +386,7 @@ main {
   font-size: 48px;
   text-align: center;
   color: #fe9013;
+  margin-top: 0px;
 }
 
 .window .one {
@@ -357,5 +404,22 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper-img img {
+  border: 2px solid #fe9013;
+  width: 168px;
+  height: 169px;
+  padding: 54px 30px;
+  margin: 0px;
+}
+
+.wrapper-img p {
+  font-size: 16px;
+  line-height: 140%;
+  margin: 30px 0px;
 }
 /*# sourceMappingURL=styles.css.map */

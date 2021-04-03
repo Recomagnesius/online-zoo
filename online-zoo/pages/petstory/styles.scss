@@ -141,8 +141,12 @@ a:hover {
 //main
 main {
   margin: 0px;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
   height: 1830px;
+  .container {
+    position: relative;
+    height: 1830px;
+  }
 }
 .about {
   display: flex;
@@ -171,16 +175,21 @@ main {
 }
 //slider
 .slider {
+  z-index: 2;
   margin: 0px auto;
   max-width: 1330px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .slider-images__content {
   max-width: 1160px;
   display: flex;
   justify-content: space-between;
+}
+.slider-images__content + .slider-images__content {
+  margin-top: 20px;
 }
 
 //стрелки слайдера
@@ -194,10 +203,14 @@ main {
   border-radius: 50%;
   border: none;
   outline: none;
+  position: absolute;
+  left: -80px;
 }
 .slider-images + .slider__btn {
   background-image: url("../../assets/icons/arrow.svg");
   transform: rotate(180deg);
+  position: absolute;
+  left: 1180px;
 }
 .slider-img-wrapper + .slider-img-wrapper {
   margin-left: 30px;
@@ -253,6 +266,31 @@ main {
   text-align: center;
   text-transform: uppercase;
   margin: 0px auto;
+  transform: translate(-50%, -0%);
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  line-height: 320%;
+}
+
+// Цветочки
+.flowers {
+  // z-index: -1;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.grass {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
+}
+.flower {
+  z-index: 1;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
 // Pick and feed a friend
 .feed {
@@ -281,11 +319,16 @@ main {
   opacity: 0.9;
 }
 
+.feed {
+  padding: 70px 0px 0px 0px;
+  max-height: 1000px;
+}
 .window {
+  // margin: 70px 0px 0px 0px;
   background: rgba(253, 253, 255, 0.52);
   backdrop-filter: blur(4px);
   border-radius: 20px;
-  padding: 0px 100px;
+  padding: 20px 100px 0px 100px;
   p,
   p a {
     color: #333b41;
@@ -297,6 +340,7 @@ main {
     font-size: 48px;
     text-align: center;
     color: #fe9013;
+    margin-top: 0px;
   }
   .one {
     font-size: 24px;
@@ -308,4 +352,19 @@ main {
 .howWorks {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.wrapper-img {
+  img {
+    border: 2px solid #fe9013;
+    width: 168px;
+    height: 169px;
+    padding: 54px 30px;
+    margin: 0px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 140%;
+    margin: 30px 0px;
+  }
 }
