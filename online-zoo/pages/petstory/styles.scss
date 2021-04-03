@@ -271,6 +271,7 @@ main {
   left: 50%;
   bottom: 100px;
   line-height: 320%;
+  display: block;
 }
 
 // Цветочки
@@ -321,7 +322,7 @@ main {
 
 .feed {
   padding: 70px 0px 0px 0px;
-  max-height: 1000px;
+  height: 1000px;
 }
 .window {
   // margin: 70px 0px 0px 0px;
@@ -329,6 +330,7 @@ main {
   backdrop-filter: blur(4px);
   border-radius: 20px;
   padding: 20px 100px 0px 100px;
+  height: 840px;
   p,
   p a {
     color: #333b41;
@@ -346,7 +348,23 @@ main {
     font-size: 24px;
   }
   .two {
-    font-weight: 500;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+  }
+}
+.howWorks-parrent {
+  display: flex;
+  flex-direction: column;
+  max-width: 760px;
+  margin: 0px auto;
+  h5 {
+    margin: 0px auto 50px auto;
+    width: 209px;
+    height: 47px;
+    font-size: 36px;
+    line-height: 130%;
+    color: #333b41;
   }
 }
 .howWorks {
@@ -355,16 +373,187 @@ main {
   align-items: center;
 }
 .wrapper-img {
+  max-width: 170px;
+  max-height: 244px;
   img {
     border: 2px solid #fe9013;
     width: 168px;
-    height: 169px;
+    height: 168px;
     padding: 54px 30px;
     margin: 0px;
+    background-color: #ffffff;
   }
   p {
     font-size: 16px;
     line-height: 140%;
     margin: 30px 0px;
+  }
+  .arrow {
+    width: 69px;
+    height: 35px;
+    position: relative;
+    bottom: 50px;
+  }
+}
+
+.feed-btn {
+  font-size: 16px;
+  line-height: 320%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 298px;
+  height: 54px;
+  color: #ffffff;
+  background-color: #fe9013;
+  border-radius: 30px;
+  margin: 0px auto;
+  margin-top: 80px;
+  display: block;
+}
+
+//TESTIMONIALS
+.testimonials {
+  height: 900px;
+  backdrop-filter: blur(4px);
+  z-index: -1;
+  .container {
+    height: 900px;
+    position: relative;
+    z-index: 2;
+    padding-top: 80px;
+  }
+}
+.testimonials .container h6 {
+  font-size: 36px;
+  line-height: 130%;
+  text-align: center;
+  color: #333b41;
+  margin: 0px;
+  margin-bottom: 80px;
+}
+.reviews {
+  display: flex;
+  justify-content: space-between;
+}
+.review {
+  background: #f1f3f2;
+  border-radius: 20px;
+  width: 270px;
+  height: 400px;
+  padding: 10px;
+  overflow: hidden;
+}
+.review__info {
+  p {
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    top: -20px;
+    left: 8px;
+  }
+  img {
+    border-radius: 50%;
+  }
+  .name {
+    font-size: 16px;
+    line-height: 120%;
+    color: #000000;
+  }
+  .grey-info {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #bdbdbd;
+    position: relative;
+    left: 50px;
+  }
+}
+.review__text {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #767474;
+  padding: 0px;
+  margin: 0px;
+}
+.progress {
+  width: 600px;
+  height: 10px;
+}
+.leave-review {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 320%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  width: 298px;
+  height: 54px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 5px;
+  position: relative;
+  top: 60px;
+}
+.testimonials .container img {
+  // transform: matrix(-0.86, -0.5, -0.5, 0.86, 0, 0);
+  // transform: rotate(180deg);
+  z-index: 1;
+  bottom: -132px;
+  overflow: hidden;
+}
+
+//FOOTER
+.footer {
+  background-color: #111115;
+  height: 440px;
+  z-index: 2;
+  .logo__text {
+    position: relative;
+    top: 40px;
+  }
+  .donate-btn {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 320%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 298px;
+    height: 54px;
+    background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+    border-radius: 5px;
+    position: relative;
+    top: 80px;
+    margin-bottom: 45px;
+  }
+
+  .social-media {
+    position: relative;
+    top: 80px;
+    padding: 0px;
+    .list-menu {
+      margin: 0px auto;
+    }
+    li + li {
+      margin-top: 10px;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      img {
+        width: 26px;
+        height: 26px;
+        padding: auto;
+      }
+      a {
+        font-size: 16px;
+        margin: 0px 0px 0px 7px;
+        color: #ffffff;
+      }
+    }
   }
 }
