@@ -1,0 +1,258 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a,
+p,
+div,
+span,
+li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400px;
+  color: #ffffff;
+}
+a:hover {
+  color: #10c97c;
+}
+
+.container {
+  width: 1600px;
+  margin: 0px auto;
+  padding: 0px 220px;
+}
+
+//header
+.header {
+  max-height: 80px;
+  display: flex;
+  background-color: #000000;
+  .container {
+    align-items: center;
+    display: flex;
+  }
+}
+
+//logo
+.logo {
+  &__ignore {
+    width: 1px;
+    height: 1px;
+    display: none;
+    position: absolute;
+  }
+  &__text {
+    position: relative;
+    text-align: center;
+    width: 82px;
+    height: 52px;
+    padding: 3.55px 4.75px;
+    border: 1.18841px solid #ffffff;
+    border-radius: 4px;
+    font-size: 19px;
+  }
+  &__img {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+  }
+}
+//navbar
+.list-menu {
+  display: flex;
+  .list-menu__item {
+    margin: 29px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .list-menu__item + .list-menu__item {
+    margin-left: 58px;
+  }
+  .list-menu__item:hover {
+    color: #d66d1d;
+  }
+}
+.map-block {
+  background-color: #eaf7fe;
+  height: 940px;
+  .container {
+    position: relative;
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 940px;
+    background-image: url("../../assets/icons/map.svg");
+    margin: 0px auto;
+  }
+}
+//зеленые фигни
+.mark {
+  position: absolute;
+}
+.eagle-mark {
+  left: calc(50% - 25.55px / 2 - 390.17px);
+  top: 465.15px;
+}
+.crocodile-mark {
+  left: calc(50% - 25.55px / 2 - 274.17px);
+  top: 482.15px;
+}
+.gorrila-mark {
+  left: calc(50% - 25.55px / 2 + 15.78px);
+  top: 568px;
+}
+.panda-mark {
+  left: calc(50% - 25.55px / 2 + 328.1px);
+  top: 437.13px;
+}
+.miniPanda-mark {
+  left: calc(50% - 25.55px / 2 + 322.78px);
+  top: 484px;
+}
+//мелкие млекопитающие и не только
+.mini-animal {
+  position: absolute;
+}
+.mini-eagle {
+  left: calc(50% - 44px / 2 - 425px);
+  top: 471px;
+}
+.mini-eagle2 {
+  left: calc(50% - 50px / 2 - 388px);
+  top: 506px;
+}
+.mini-crocodile {
+  left: calc(50% - 75px / 2 - 256.5px);
+  top: 520px;
+}
+.mini-gorrila {
+  left: calc(50% - 50px / 2 + 29px);
+  top: 605px;
+}
+.mini-panda {
+  left: calc(50% - 37px / 2 + 296.5px);
+  top: 430px;
+}
+.mini-miniPanda {
+  left: calc(50% - 46px / 2 + 294px);
+  top: 497px;
+}
+//тултип
+.tooltip {
+  position: absolute;
+  /*Пока использовал Display.none*/
+  display: none;
+  top: -50px;
+  left: -41px;
+  margin-top: 50px;
+  width: 157px;
+  height: 107px;
+  background: #ffffff;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.tooltip:before,
+.tooltip:after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 51px;
+  border-bottom: 7.5px solid #ffffff;
+  border-left: 4.8px solid transparent;
+  border-right: 4.8px solid transparent;
+}
+
+.tooltip:before {
+  top: -8px;
+  border-bottom-color: black;
+}
+
+.tooltip p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+}
+
+.tooltip-button {
+  width: 136px;
+  height: 31px;
+  margin: 11px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #4b9200;
+}
+
+.tooltip-paragraphs {
+  margin-top: 7px;
+  margin-left: 9px;
+}
+
+.eagle-1:hover ~ #eagle-tooltip {
+  display: block;
+  top: -50px;
+  left: -41px;
+}
+
+.eagle-2:hover ~ #eagle-tooltip {
+  display: block;
+  top: -31px;
+  left: 7px;
+}
+
+.eagle-1:hover ~ .map-marker path {
+  fill: #f9804b;
+}
+
+.eagle-2:hover ~ .map-marker path {
+  fill: #f9804b;
+}
+
+.crocodale:hover ~ #crocodile-tooltip {
+  display: block;
+  top: -25px;
+  left: -51px;
+}
+
+.crocodale:hover ~ .map-marker path {
+  fill: #f9804b;
+}
+
+.gorillas:hover ~ #gorillas-tooltip {
+  display: block;
+  top: 44px;
+  left: 32px;
+}
+
+.gorillas:hover ~ .map-marker path {
+  fill: #f9804b;
+}
+
+.panda-1:hover ~ #pandas-tooltip {
+  display: block;
+  top: -54px;
+  left: 8px;
+}
+
+.panda-2:hover ~ #pandas-tooltip {
+  display: block;
+  top: 6px;
+  left: 8px;
+}
+
+.panda-1:hover ~ .m-1 path {
+  fill: #f9804b;
+}
+
+.panda-2:hover ~ .m-2 path {
+  fill: #f9804b;
+}

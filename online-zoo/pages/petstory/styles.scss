@@ -510,6 +510,9 @@ main {
   background-color: #111115;
   height: 440px;
   z-index: 2;
+  .container {
+    position: relative;
+  }
   .logo__text {
     position: relative;
     top: 40px;
@@ -532,11 +535,16 @@ main {
   }
 
   .social-media {
+    width: 330px;
     position: relative;
     top: 80px;
-    padding: 0px;
+    margin: 0px;
     .list-menu {
-      margin: 0px auto;
+      margin: 0px;
+      background-color: #23bb7b;
+      position: absolute;
+      z-index: 10;
+      // position: absolute;
     }
     li + li {
       margin-top: 10px;
@@ -554,6 +562,42 @@ main {
         margin: 0px 0px 0px 7px;
         color: #ffffff;
       }
+    }
+  }
+}
+.form {
+  position: absolute;
+  top: 40px;
+  right: 220px;
+  width: 370px;
+  height: 85px;
+  p {
+    font-size: 24px;
+    line-height: 120%;
+    color: #ffffff;
+  }
+  form {
+    input {
+      width: 230px;
+      height: 40px;
+      padding: 10px 7px 10px 10px;
+      border-radius: 2px;
+      border: 1px solid #f9804b;
+      font-size: 16px;
+      line-height: 140%;
+      color: #bdbdbd;
+      background-color: #111115;
+    }
+    button {
+      margin-left: 10px;
+      width: 130px;
+      height: 41px;
+      font-size: 16px;
+      line-height: 140%;
+      color: #4b9200;
+      background: #f1f3f2;
+      border: 1px solid #4b9200;
+      border-radius: 5px;
     }
   }
 }
