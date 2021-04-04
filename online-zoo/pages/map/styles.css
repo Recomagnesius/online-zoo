@@ -26,68 +26,6 @@ a:hover {
   padding: 0px 220px;
 }
 
-.header {
-  max-height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #000000;
-}
-
-.header .container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.logo__ignore {
-  width: 1px;
-  height: 1px;
-  display: none;
-  position: absolute;
-}
-
-.logo__text {
-  position: relative;
-  text-align: center;
-  width: 82px;
-  height: 52px;
-  padding: 3.55px 4.75px;
-  border: 1.18841px solid #ffffff;
-  border-radius: 4px;
-  font-size: 19px;
-}
-
-.logo__img {
-  position: absolute;
-  top: 25px;
-  left: 10px;
-}
-
-.list-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.list-menu .list-menu__item {
-  margin: 29px 0px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 140%;
-}
-
-.list-menu .list-menu__item + .list-menu__item {
-  margin-left: 58px;
-}
-
-.list-menu .list-menu__item:hover {
-  color: #d66d1d;
-}
-
 .map-block {
   background-color: #eaf7fe;
   height: 940px;

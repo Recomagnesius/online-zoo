@@ -23,57 +23,6 @@ a:hover {
   padding: 0px 220px;
 }
 
-//header
-.header {
-  max-height: 80px;
-  display: flex;
-  background-color: #000000;
-  .container {
-    align-items: center;
-    display: flex;
-  }
-}
-
-//logo
-.logo {
-  &__ignore {
-    width: 1px;
-    height: 1px;
-    display: none;
-    position: absolute;
-  }
-  &__text {
-    position: relative;
-    text-align: center;
-    width: 82px;
-    height: 52px;
-    padding: 3.55px 4.75px;
-    border: 1.18841px solid #ffffff;
-    border-radius: 4px;
-    font-size: 19px;
-  }
-  &__img {
-    position: absolute;
-    top: 25px;
-    left: 10px;
-  }
-}
-//navbar
-.list-menu {
-  display: flex;
-  .list-menu__item {
-    margin: 29px 0px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 140%;
-  }
-  .list-menu__item + .list-menu__item {
-    margin-left: 58px;
-  }
-  .list-menu__item:hover {
-    color: #d66d1d;
-  }
-}
 .map-block {
   background-color: #eaf7fe;
   height: 940px;
