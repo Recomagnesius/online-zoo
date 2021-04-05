@@ -16,7 +16,12 @@ li {
 }
 
 a:hover {
-  color: #10c97c;
+  color: #fb8441;
+}
+
+.deactive {
+  color: #fb8441;
+  cursor: default;
 }
 
 .container {

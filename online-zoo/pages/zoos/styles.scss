@@ -1,6 +1,7 @@
 .sidebar {
   width: 100px;
   height: 650px;
+  margin-right: 80px;
   background: linear-gradient(
       315.75deg,
       rgba(254, 210, 144, 0.7) 30.06%,
@@ -30,7 +31,7 @@
   align-items: center;
   padding: 16px 10px;
   position: sticky;
-  margin: 100px 0px 100px 30px;
+  top: 100px;
   .sidebar-item {
     width: 80px;
     height: 80px;
@@ -38,38 +39,160 @@
     border: 2px solid #f9804b;
     border-radius: 50%;
     outline: none;
-    background: center;
-    background: no-repeat;
-  }
-  .1 {
-    background-image: url("../../assets/icons/sidebar-animals/gorilla_icon.svg");
-  }
-  .2 {
-    background-image: url("../../assets/icons/sidebar-animals/alligator_widget2.svg");
-  }
-  .3 {
-    background-image: url("../../assets/icons/sidebar-animals/panda_icon.svg");
-  }
-  .4 {
-    background-image: url("../../assets/icons/sidebar-animals/eagle_icon.svg");
-  }
-  .5 {
-    background-image: url("../../assets/icons/sidebar-animals/lemur.svg");
-  }
-  .6 {
-    background-image: url("../../assets/icons/sidebar-animals/penguin_icon.svg");
-  }
-  .7 {
-    background-image: url("../../assets/icons/sidebar-animals/arrow_elips_2_down.svg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .main-container {
   position: relative;
   width: 1600px;
   margin: 0px auto;
+  display: flex;
+  padding: 0px 220px 0px 30px;
   .container {
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    padding: 0px 0px;
   }
+}
+
+.panda-camera {
+  height: 950px;
+  width: 1160px;
+  p {
+    font-size: 48px;
+    line-height: 120%;
+    color: #333b41;
+    margin-bottom: 30px;
+  }
+  iframe {
+    // width: 1160px;
+    // height: 650px;
+    display: block;
+    margin-bottom: 80px;
+  }
+}
+.slider__btn {
+  background-color: #f9804b;
+  background-image: url("../../assets/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  position: absolute;
+  left: -80px;
+}
+.videos {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.video + .slider__btn {
+  background-image: url("../../assets/icons/arrow.svg");
+  transform: rotate(180deg);
+  position: absolute;
+  left: 1180px;
+}
+//ABOUT ANIMAL
+.animal-info {
+  margin-top: 140px;
+  width: 1160px;
+  h5 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    color: #4b9200;
+  }
+}
+.animal-dex {
+  width: 1160x;
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 420px;
+    height: 420px;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    p {
+      margin: 0px 0px 0px 70px;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 140%;
+      color: #ababab;
+    }
+    .animal-btn {
+      font-size: 16px;
+      line-height: 320%;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      width: 298px;
+      height: 54px;
+      color: #ffffff;
+      background-color: #fe9013;
+      border-radius: 30px;
+      margin: 40px 0px 0px 70px;
+      margin-top: 80px;
+      display: block;
+    }
+  }
+}
+.hr {
+  height: 1px;
+  width: 1160px;
+  background: #767474;
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+span {
+  color: #4b9200;
+}
+.inl {
+  display: inline;
+}
+h6 {
+  margin: 0px;
+  font-size: 24px;
+  line-height: 120%;
+  color: #000000;
+}
+.wrapper {
+  margin-top: 30px;
+}
+p {
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+}
+.less {
+  margin-top: 40px;
+  margin-bottom: 180px;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #000000;
+  background: #f1f3f2;
+  border: 1px solid #333b41;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 130px;
+  height: 40px;
+  outline: none;
+}
+.grass {
+  position: absolute;
+  right: 0px;
+  bottom: -85px;
+}
+.flower {
+  transform: scale(-1, 1);
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
 }
