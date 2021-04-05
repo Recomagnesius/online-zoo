@@ -3,7 +3,21 @@
 *::before {
   box-sizing: border-box;
 }
-
+.messege {
+  padding: 10px 0px 0px 20px;
+  z-index: 20;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 500px;
+  width: 800px;
+  border-radius: 7px;
+  background-color: gray;
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+  }
+}
 a,
 p,
 div,
