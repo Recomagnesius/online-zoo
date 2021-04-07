@@ -28,24 +28,26 @@
           <div class="logo">
             <h1 class="logo__ignore">PetStory online</h1>
             <p class="logo__text">
-              <a href="##">PetStory online</a>
-              <img
+              <a href="index.html">PetStory online</a>
+              <a href="index.html">              <img
                 src="../../assets/icons/bamboo.svg"
                 alt="bamboo"
                 class="logo__img"
-              />
+              /></a>
             </p>
           </div>
           <nav>
             <ul class="list-menu">
-              <li class="list-menu__item"><a href="##">About</a></li>
+              <li class="list-menu__item">
+                <a class="deactive" href="##">About</a></li>
               <li class="list-menu__item">
                 <a href="../map/index.html">Map</a>
               </li>
               <li class="list-menu__item">
                 <a href="../zoos/panda.html">Zoos</a>
               </li>
-              <li class="list-menu__item"><a href="##">Contact us</a></li>
+              <li class="list-menu__item">
+                <a href="##">Contact us</a></li>
               <li class="list-menu__item">
                 <a
                   href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
@@ -63,7 +65,7 @@
             <p class="content-top__text">
               Watch your <span>favorite</span> animal online
             </p>
-            <a href="##" class="content-top__btn">watch online</a>
+            <a href="../zoos/panda.html" class="content-top__btn">watch online</a>
           </div>
         </div>
       </div>
@@ -105,6 +107,7 @@
                   src="../../assets\images\animals\Rectangle 5-5.jpg"
                   alt="animal"
                   class="slider__img"
+                  data-animal="Panda, Southwest China"
                 />
                 <div class="img-wrapper__text">
                   <h4>giant Pandas</h4>
@@ -121,6 +124,7 @@
                   src="../../assets\images\animals\Rectangle 5-1.jpg"
                   alt="animal"
                   class="slider__img"
+                  data-animal="Eagle, South America"
                 />
                 <div class="img-wrapper__text">
                   <h4>Eagles</h4>
@@ -137,6 +141,7 @@
                   src="../../assets\images\animals\Rectangle 5-4.jpg"
                   alt="animal"
                   class="slider__img"
+                  data-animal="Gorilla, Congo"
                 />
                 <div class="img-wrapper__text">
                   <h4>Gorillas</h4>
@@ -155,6 +160,7 @@
                   src="../../assets\images\animals\Rectangle 5-2.jpg"
                   alt="animal"
                   class="slider__img"
+                  data-animal="Sloth, South America"
                 />
                 <div class="img-wrapper__text">
                   <h4>Two-toed Sloth</h4>
@@ -172,6 +178,7 @@
                   src="../../assets\images\animals\Rectangle 5-3.jpg"
                   alt="animal"
                   class="slider__img"
+                  data-animal="Cheetah, Africa"
                 />
                 <div class="img-wrapper__text">
                   <h4>cheetahs</h4>
@@ -189,6 +196,7 @@
                   src="../../assets\images\animals\Rectangle 5.jpg"
                   alt="animal"
                   class="slider__img"
+                  data-animal="Penguin, Antarctica"
                 />
                 <div class="img-wrapper__text">
                   <h4>Penguins</h4>
@@ -202,7 +210,7 @@
               </div>
             </div>
           </div>
-          <button class="slider__btn"></button>
+          <div class="slider__btn"></div>
         </div>
         <img
           src="../../assets/images/flowers.jpg"
@@ -220,7 +228,7 @@
           alt="flower"
           class="flower"
         />
-        <a class="favorite-btn" href="##">choose your favorite</a>
+        <a class="favorite-btn" href="../map/index.html">choose your favorite</a>
       </div>
     </main>
 
@@ -236,12 +244,12 @@
           <p class="two">
             During a time when the COVID-19 epidemic is touching all of our
             lives, we’re proud and glad that people around the world find joy in
-            PatStory.
+            PetStory.
           </p>
           <p class="three">
             Even though the zoo has reopened, we need you now more than ever to
             help us deal with these problems. Please consider a gift to our
-            <a href="##">Emergency Support Fund</a> .
+            <a href="../donate/index.html">Emergency Support Fund</a> .
           </p>
           <div class="howWorks-parrent">
             <h5>How it works</h5>
@@ -364,7 +372,9 @@
             </p>
           </div>
         </div>
-        <div class="progress"></div>
+        <div class="range-container">
+          <input type="range" min="0" max="100" value="0" class="range">
+        </div>
         <a href="##" class="leave-review">leave feedback</a>
         <img src="../../assets/images/leav_foto.png" alt="" class="flower" />
       </div>
@@ -372,15 +382,17 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__left">
-          <p class="logo__text">
-            <a href="##">PetStory online</a>
-            <img
-              src="../../assets/icons/bamboo.svg"
-              alt="bamboo"
-              class="logo__img"
-            />
-          </p>
-          <a href="##" class="donate-btn">donate for volunteers</a>
+          <div class="logo">
+            <p class="logo__text">
+              <a href="index.html">PetStory online</a>
+              <a href="index.html">              <img
+                src="../../assets/icons/bamboo.svg"
+                alt="bamboo"
+                class="logo__img"
+              /></a>
+            </p>
+          </div>
+          <a href="../donate/index.html" class="donate-btn">donate for volunteers</a>
           <ul class="social-media">
             <li>
               <img src="../../assets/icons/facebook.svg" alt="" /><a href="##"
@@ -406,16 +418,27 @@
         </div>
 
         <ul class="list-menu">
-          <li class="list-menu__item"><a href="##">About</a></li>
-          <li class="list-menu__item"><a href="##">Map</a></li>
-          <li class="list-menu__item"><a href="##">Zoos</a></li>
-          <li class="list-menu__item"><a href="##">Contact us</a></li>
-          <li class="list-menu__item"><a href="##">Designed by ©</a></li>
+          <li class="list-menu__item">
+            <a class="deactive" href="##">About</a></li>
+          <li class="list-menu__item">
+            <a href="../map/index.html">Map</a>
+          </li>
+          <li class="list-menu__item">
+            <a href="../zoos/panda.html">Zoos</a>
+          </li>
+          <li class="list-menu__item">
+            <a href="##">Contact us</a></li>
+          <li class="list-menu__item">
+            <a
+              href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
+              >Designed by ©</a
+            >
+          </li>
         </ul>
         <div class="form">
           <p>Subscribe to our news</p>
           <form action="">
-            <input placeholder="Enter your email" type="email" /><button>
+            <input placeholder="Enter your email" type="email" name="my_form" required/><button name="my_form">
               Submit
             </button>
           </form>

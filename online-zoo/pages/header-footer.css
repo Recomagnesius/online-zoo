@@ -15,7 +15,7 @@ li {
   color: #ffffff;
 }
 
-a:hover {
+.list-menu__item a:hover {
   color: #fb8441;
 }
 
@@ -153,6 +153,7 @@ a:hover {
 }
 
 .footer .social-media li img {
+  cursor: pointer;
   width: 26px;
   height: 26px;
   padding: auto;
@@ -203,6 +204,7 @@ a:hover {
 }
 
 .form form button {
+  cursor: pointer;
   outline: none;
   margin-left: 10px;
   width: 130px;
@@ -211,7 +213,8 @@ a:hover {
   line-height: 140%;
   color: #4b9200;
   background: #f1f3f2;
-  border: 1px solid #4b9200;
+  border: 1px solid red;
   border-radius: 5px;
+  color: red;
 }
 /*# sourceMappingURL=header-footer.css.map */
