@@ -21,9 +21,8 @@ a:hover {
   width: 1600px;
   margin: 0px auto;
   padding: 0px 220px;
-  
 }
-.scale{
+.scale {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -33,17 +32,17 @@ a:hover {
   position: absolute;
   bottom: 40px;
   right: 40px;
-  img{
+  img {
     cursor: pointer;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 5px;
     width: 54px;
     height: 54px;
   }
-  .plus{
+  .plus {
     padding: 11px;
   }
-  .minus{
+  .minus {
     padding: 24px 11px;
   }
 }
@@ -113,16 +112,10 @@ a:hover {
   top: 497px;
 }
 //тултип
-.animal-block{
-  position: relative;
-}
 .tooltip {
   position: absolute;
   /*Пока использовал Display.none*/
   display: none;
-  top: -50px;
-  left: -41px;
-  margin-top: 50px;
   width: 157px;
   height: 107px;
   background: #ffffff;
@@ -130,7 +123,22 @@ a:hover {
   border: 1px solid black;
   border-radius: 5px;
 }
-
+.tooltip--aligator {
+  top: 540px;
+  left: 490px;
+}
+.tooltip--eagle {
+  top: 540px;
+  left: 360px;
+}
+.tooltip--gorrila {
+  top: 650px;
+  left: 773px;
+}
+.tooltip--panda {
+  top: 540px;
+  left: 1043px;
+}
 .tooltip:before,
 .tooltip:after {
   content: "";
@@ -154,81 +162,40 @@ a:hover {
   font-size: 16px;
   line-height: 140%;
   color: #000000;
-}
-
-.tooltip-button {
-  width: 136px;
-  height: 31px;
-  margin: 11px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 140%;
-  color: #4b9200;
-}
-
-.tooltip-paragraphs {
   margin-top: 7px;
   margin-left: 9px;
 }
 
-.eagle-1:hover ~ #eagle-tooltip {
+.tooltip-button {
   display: block;
-  top: -50px;
-  left: -41px;
+  text-align: center;
+  width: 136px;
+  height: 31px;
+  background: #f1f3f2;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  line-height: 140%;
+  color: #4b9200;
+  margin: 0px auto;
+  padding: 4px 16px;
 }
-
-.eagle-2:hover ~ #eagle-tooltip {
+.tooltip:hover {
   display: block;
-  top: -31px;
-  left: 7px;
 }
-
-.eagle-1:hover ~ .map-marker path {
-  fill: #f9804b;
-}
-
-.eagle-2:hover ~ .map-marker path {
-  fill: #f9804b;
-}
-
-.crocodale:hover ~ #crocodile-tooltip {
+.mini-gorrila:hover ~ .tooltip--gorrila {
   display: block;
-  top: -25px;
-  left: -51px;
 }
-
-.crocodale:hover ~ .map-marker path {
-  fill: #f9804b;
-}
-
-.gorillas:hover ~ #gorillas-tooltip {
+.mini-eagle:hover ~ .tooltip--eagle,
+.mini-eagle2:hover ~ .tooltip--eagle {
   display: block;
-  top: 44px;
-  left: 32px;
 }
-
-.gorillas:hover ~ .map-marker path {
-  fill: #f9804b;
-}
-
-.panda-1:hover ~ #pandas-tooltip {
+.mini-crocodile:hover ~ .tooltip--aligator {
   display: block;
-  top: -54px;
-  left: 8px;
 }
-
-.panda-2:hover ~ #pandas-tooltip {
+.mini-panda:hover ~ .tooltip--panda,
+.mini-miniPanda:hover ~ .tooltip--panda {
   display: block;
-  top: 6px;
-  left: 8px;
 }
-
-.panda-1:hover ~ .m-1 path {
-  fill: #f9804b;
-}
-
-.panda-2:hover ~ .m-2 path {
-  fill: #f9804b;
+.mark:hover {
+  cursor: pointer;
 }
