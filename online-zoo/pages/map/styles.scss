@@ -21,8 +21,32 @@ a:hover {
   width: 1600px;
   margin: 0px auto;
   padding: 0px 220px;
+  
 }
-
+.scale{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 54px;
+  height: 118px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  img{
+    cursor: pointer;
+    background: #FFFFFF;
+    border-radius: 5px;
+    width: 54px;
+    height: 54px;
+  }
+  .plus{
+    padding: 11px;
+  }
+  .minus{
+    padding: 24px 11px;
+  }
+}
 .map-block {
   background-color: #eaf7fe;
   height: 940px;
@@ -89,6 +113,9 @@ a:hover {
   top: 497px;
 }
 //тултип
+.animal-block{
+  position: relative;
+}
 .tooltip {
   position: absolute;
   /*Пока использовал Display.none*/
