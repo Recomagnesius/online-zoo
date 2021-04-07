@@ -102,13 +102,138 @@ main {
 .amount p {
   line-height: 140%;
   color: #000000;
+  margin-bottom: 10px;
 }
 
-.amount input {
-  margin: 0px auto;
+.amount .range {
   width: 976px;
   height: 27px;
   background: #404950;
   border-radius: 2px;
+  margin-bottom: 12px;
+  padding: 0px 30px;
+}
+
+.dots {
+  width: 915px;
+  height: 2px;
+  background: #72828e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 13px;
+  position: relative;
+}
+
+.dots .dot {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #ffee2e;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.dots .small-circle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 239px;
+  top: -5px;
+  z-index: 9;
+}
+
+.dots .big-circle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 239px;
+  top: -5px;
+  z-index: 10;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 940px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px auto;
+}
+
+.numbers p {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #333b41;
+}
+
+.numbers p::before {
+  content: "$";
+}
+
+.numbers .active,
+.numbers .active::before {
+  color: #fe9013;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.number {
+  font-size: 16px;
+  line-height: 140%;
+  color: #929699;
+  outline: none;
+  border: 1px solid #929699;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  width: 268px;
+  height: 54px;
+  padding: 16px 0px 16px 9px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 140%;
+  color: #929699;
+  margin: 16px 0px 16px 9px;
+}
+
+::-moz-placeholder {
+  margin: 16px 0px 16px 9px;
+  font-size: 16px;
+  line-height: 140%;
+  color: #929699;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  margin: 16px 0px 16px 9px;
+  font-size: 16px;
+  line-height: 140%;
+  color: #929699;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  margin: 16px 0px 16px 9px;
+  font-size: 16px;
+  line-height: 140%;
+  color: #929699;
 }
 /*# sourceMappingURL=styles.css.map */
